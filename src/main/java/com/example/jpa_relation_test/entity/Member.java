@@ -32,6 +32,7 @@ public class Member {
     private String nickname;
 
     @ManyToOne
+    @JoinColumn(name = "Sparta_Store_Id")
     private BookStore bookStore;
 
     @ManyToMany
